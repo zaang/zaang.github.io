@@ -20,14 +20,14 @@ author :
 # Information for contacts showed at on the footer
 #
 contact :
-  E-mail : mailto:dingzaang@gmail.com
-  Github : https://github.com/zaang
+  E-mail : mailto:dingzaang@gmail.com  
   WeiBo : http://weibo.com/dingjeng
   
 # Links showed on the footer
 #
 links :
-  Jeng's Blog : http://zaang.github.io/
+  Blog : http://zaang.github.io/
+  Github : https://github.com/zaang
 
 # The search engine. Only support google custom search engine.
 #
@@ -126,7 +126,7 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : simpleyyt
+      short_name : zaang
     disqus :
       short_name : simpleyyt
     livefyre :
