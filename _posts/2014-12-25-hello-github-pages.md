@@ -2,8 +2,8 @@
 layout: post
 category: Web
 title: Hello GitHub Pages
-tagline: by dingz
-tags: [ruby, jekyll, github]
+tagline: 2014-12-25
+tags: [site, ruby]
 ---
 
 过去曾建过很多Blog，由于各种原因都没有存续下来。但我总还是无法摆脱写点东西的需求，GitHub Pages 最适合现在的我。
@@ -41,6 +41,8 @@ tags: [ruby, jekyll, github]
     bundle install
 
 默认的目录结构就建立了。
+
+PS: 如果之前安装的是ruby的2.00版本，这里会出现"Liquid Exception: cannot load such file -- yajl/2.0/yajl in _posts/2014-05-21-welcome-to-jekyll.markdown"错误，试了网上几种方法都未解决。
 
 ### 第三步 完善网站 ###
 jekyll有很多教程了，可以一步一步从零开始搭建，也可以在网上的模板进行修改。
