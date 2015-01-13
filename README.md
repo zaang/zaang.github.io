@@ -1,4 +1,4 @@
-# Simpleyyt
+# zaang.github.io
 
 My blog based on Jekyll-Bootstrap.
 
@@ -8,7 +8,7 @@ For all usage and documentation please see: <http://jekyllbootstrap.com>
 
 ## About theme
 
-This theme is the copy of [elementaryOS](http://elementaryos.org) portal page. Some features are imperfect, but I will make it more perfect.
+This theme is the copy of [Simpleyyt](http://simpleyyt.github.io) portal page.
 
 ## Usage
 
@@ -25,10 +25,7 @@ You must place "<!--more-->" at paragraph in post. The whole content will be dis
 
 ## Change Log
 
- * Add pagination.
- * Add new way of excerpt.
- * Download google fonts to the local.
- * Add google custom search engine.
+
 
 ## License
 

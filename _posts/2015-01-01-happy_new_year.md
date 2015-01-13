@@ -1,8 +1,8 @@
 ---
 layout: post
-category: linux
+category: life
 title: Happy New Year
-tagline: by Snail
-tags: [life]
+tagline: by dingz
+tags: [diary]
 ---
 2015 新年快乐~！
