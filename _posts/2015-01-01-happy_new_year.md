@@ -1,7 +1,8 @@
 ---
 layout: post
 category: linux
-title: Happy New Year ĞÂÄê¿ìÀÖtagline: by Snail
+title: Happy New Year
+tagline: by Snail
 tags: [life]
 ---
-2015 ĞÂÄê¿ìÀÖ£¡
+2015 æ–°å¹´å¿«ä¹~ï¼
