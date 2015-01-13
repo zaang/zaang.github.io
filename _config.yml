@@ -9,8 +9,8 @@ markdown: kramdown
 
 # The title and tagline is showed on homepage
 #
-title :  Zaang 
-tagline: Jeng's Blog
+title :  Jeng's Blog
+tagline: 
 
 # Information about author
 #
@@ -20,14 +20,14 @@ author :
 # Information for contacts showed at on the footer
 #
 contact :
-  e-mail : mailto:dingzaang@gmail.com
+  E-mail : mailto:dingzaang@gmail.com
   Github : https://github.com/zaang
   WeiBo : http://weibo.com/dingjeng
   
 # Links showed on the footer
 #
 links :
-  Yitao's Blog : http://zaang.github.io/
+  Jeng's Blog : http://zaang.github.io/
 
 # The search engine. Only support google custom search engine.
 #

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: life
+category: Life
 title: Happy New Year
 tagline: by dingz
 tags: [diary]
