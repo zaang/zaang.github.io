@@ -6,7 +6,7 @@ tagline: 2015-01-04
 tags: [diary, chrome]
 ---
 
-介绍几个能让Chrome更清爽浏览网页的扩展程序。
+介绍几个能让Chrome更清爽浏览网页以及为工作带来便利的扩展程序。
 
 <!--more-->
 
@@ -27,3 +27,9 @@ tags: [diary, chrome]
 ### Gooreplacer ###
 
 替换Google 字体以及API等玩意，提高网页速度，你懂得~~~~
+
+### Markdown Here ###
+
+允许你在发送电子邮件之前用Markdown语法编辑并转换它。甚至支持**Evernote**的网页版！
+
+这么说吧可以先用Markdown语法写电子邮件，然后点击扩展按钮，内容就自动转为对应的富文本形式了。再点一下扩展按钮又回到Markdown语法形式。
