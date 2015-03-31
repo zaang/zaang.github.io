@@ -40,7 +40,7 @@ tags: [network]
 - 在公司电脑可以成功访问到家里路由器上的FTP。
 
  
-但是VPN却无法成功，不知是否是因为没有开放Ping的关系：
+但是VPN却无法成功：
     
     Sat Feb 28 09:36:05 2015 [UNDEF] Inactivity timeout (--ping-restart), restarting
     Sat Feb 28 09:36:05 2015 SIGUSR1[soft,ping-restart] received, process restarting
