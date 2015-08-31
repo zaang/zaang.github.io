@@ -1,9 +1,9 @@
 ---
 layout: post
-category: c#
+category: windows
 title: Devexpress Chart Note
 tagline: 2015-08-24
-tags: [c#]
+tags: [windows, .net]
 ---
 
 关于 Devexpress 中 Chart 的一些记录。
@@ -16,7 +16,7 @@ tags: [c#]
 
 直接修改属性运行时报错，需要调用下面的接口
 
-    XYDiagram.AxisX.VisualRange.SetMinMaxValues(object min, object max);	
+    XYDiagram.AxisX.VisualRange.SetMinMaxValues(object min, object max);
     XYDiagram.AxisX.WholeRange.SetMinMaxValues(object min, object max);
 
 如果还有问题，那就是没把自动取消
@@ -29,7 +29,7 @@ tags: [c#]
 如修改 Y 轴单位为“万元”时
 
     xyDiagram1.AxisY.Label.EndText = "万元";
-	
+
 ### 3. 坐标轴精度
 
 如X轴是日期类型，需要只显示月份，但是精度又是为天时
