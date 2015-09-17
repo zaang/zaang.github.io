@@ -53,3 +53,19 @@ tags: [windows, .net, revit]
 
 > 这里获取的项目基点坐标单位是英寸，最终结果是需要根据实际单位换算的。
 
+### 4. 正确获取共享坐标
+
+通过 projectPosition 获取变换矩阵，对所有坐标进行变换。
+
+    Transform GetProjectLocationTransform(Document doc)
+    {
+        ProjectPosition projectPosition = doc.ActiveProjectLocation.get_ProjectPosition(XYZ.Zero);
+        XYZ translationVector = new XYZ(projectPosition.EastWest, projectPosition.NorthSouth,
+            projectPosition.Elevation);
+
+        Transform translationTransform = Transform.get_Translation(translationVector);
+        Transform rotationTransform = Transform.get_Rotation(XYZ.Zero, XYZ.BasisZ, projectPosition.Angle);
+        Transform finalTransform = translationTransform.Multiply(rotationTransform);
+
+        return finalTransform;
+}
