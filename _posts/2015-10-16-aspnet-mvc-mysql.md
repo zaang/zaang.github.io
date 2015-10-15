@@ -19,7 +19,8 @@ ASP.NET MVC & MySQL 的环境搭建与配置的一些问题。
 
 1. 安装 MySQL (ZIP) [http://dev.mysql.com/downloads/windows/installer/](http://dev.mysql.com/downloads/windows/installer/)
 
-    #安装后修改 root 用户密码为 root：
+> 安装后修改 root 用户密码，比如改为 root：
+
     mysql -uroot -p
     use mysql
     update user set password=password("root") where user='root';
@@ -36,6 +37,7 @@ ASP.NET MVC & MySQL 的环境搭建与配置的一些问题。
 ### 运行发生的问题
 
 用的是 Code Frist 的方式，各种错误，总结如下：
+
 1. Web.config 中检查 provider，用 nuget 安装过这里会自动改好。
 2. Web.config 中增加 connectionStrings。
 3. Global.asax.cs 中增加 Database.SetInitializer(...);
