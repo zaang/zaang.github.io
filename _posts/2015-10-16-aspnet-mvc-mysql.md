@@ -19,13 +19,6 @@ ASP.NET MVC & MySQL 的环境搭建与配置的一些问题。
 
 1. 安装 MySQL (ZIP) [http://dev.mysql.com/downloads/windows/installer/](http://dev.mysql.com/downloads/windows/installer/)
 
-> 安装后修改 root 用户密码，比如改为 root：
-
-    mysql -uroot -p
-    use mysql
-    update user set password=password("root") where user='root';
-    flush privileges;
-
 2. 安装 MySQL Connector/Net [http://dev.mysql.com/downloads/connector/net/](http://dev.mysql.com/downloads/connector/net/)
 
 3. 安装 MySQL for Visual Studio [http://dev.mysql.com/downloads/windows/visualstudio/](http://dev.mysql.com/downloads/windows/visualstudio/)
@@ -33,6 +26,14 @@ ASP.NET MVC & MySQL 的环境搭建与配置的一些问题。
 4. VS 中 Nuget 安装 Entity Framework (6.1.3)
 
 5. VS 中 Nuget 安装 MySQL.Data.Entity (6.9.7)，版本与 MySQL Connector/Net 一致
+
+
+> 安装后修改 root 用户密码，比如改为 root：
+
+    mysql -uroot -p
+    use mysql
+    update user set password=password("root") where user='root';
+    flush privileges;
 
 ### 运行发生的问题
 
