@@ -6,7 +6,7 @@ layout: post
 category: windows
 title: A Csharp Interview Question
 tagline: 2015-10-20
-tags: [windows, mysql, asp.net]
+tags: [csharp]
 ---
 
 一道关于 csharp try 的笔试问题
