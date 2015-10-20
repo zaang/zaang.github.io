@@ -5,7 +5,7 @@ title: ---
 layout: post
 category: windows
 title: ASP.NET MVC & MySQL
-tagline: 2015-09-21
+tagline: 2015-10-16
 tags: [windows, mysql, asp.net]
 ---
 
