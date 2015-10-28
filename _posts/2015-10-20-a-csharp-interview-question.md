@@ -1,9 +1,6 @@
 ---
 layout: post
 category: windows
-title: ---
-layout: post
-category: windows
 title: A Csharp Interview Question
 tagline: 2015-10-20
 tags: [csharp]
