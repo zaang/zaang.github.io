@@ -3,7 +3,7 @@ layout: post
 category: android
 title: Fix Android 5.1 WiFi Problem
 tagline: 2015-10-28
-tags: [csharp]
+tags: [android]
 ---
 
 手机升级到 Android 5.1 之后也遇到了连接 WiFi 时发热耗电的问题。在这里记录一下解决过程。
