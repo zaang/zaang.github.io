@@ -2,7 +2,7 @@
 layout: post
 category: android
 title: Fix VS Reference Conflict
-tagline: 2015-10-28
+tagline: 2015-10-29
 tags: [csharp]
 ---
 
