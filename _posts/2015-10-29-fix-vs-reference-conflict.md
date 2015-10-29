@@ -1,7 +1,7 @@
 ---
 layout: post
 category: android
-title: Fix Android 5.1 WiFi Problem
+title: Fix VS Reference Conflict
 tagline: 2015-10-28
 tags: [csharp]
 ---
