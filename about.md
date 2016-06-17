@@ -5,5 +5,5 @@ header: About Me
 group: navigation
 ---
  * **Name:** Gene Ding
- * **Twitter:** [dingjeng](http://twitter.com/dingzaang)
- * **Blog:** [Jeng's Blog](https://zaang.github.io)
+ * **Twitter:** [dingzaang](http://twitter.com/dingzaang)
+ * **Blog:** [Gene's Blog](https://zaang.github.io)
