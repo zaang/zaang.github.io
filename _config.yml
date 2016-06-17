@@ -9,25 +9,24 @@ markdown: kramdown
 
 # The title and tagline is showed on homepage
 #
-title :  Jeng's Blog
+title :  Gene's Blog
 tagline: 
 
 # Information about author
 #
 author :
-  name : dingz
+  name : gene
   
 # Information for contacts showed at on the footer
 #
 contact :
-  E-mail : mailto:dingzaang@gmail.com  
-  WeiBo : http://weibo.com/dingjeng
+  E-mail : mailto:dingzaang@gmail.com
   
 # Links showed on the footer
 #
 links :
-  Blog : http://zaang.github.io/
-  Github : https://github.com/zaang
+  Twitter : http://twitter.com/dingzaang
+  WeiBo : http://weibo.com/dingjeng
 
 # The search engine. Only support google custom search engine.
 #
