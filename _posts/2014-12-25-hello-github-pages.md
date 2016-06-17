@@ -6,11 +6,9 @@ tagline: 2014-12-25
 tags: [site, ruby]
 ---
 
-过去曾建过很多Blog，由于各种原因都没有存续下来。但我总还是无法摆脱写点东西的需求，GitHub Pages 最适合现在的我。
+以下记录Windows7系统下的本地环境搭建过程
 
 <!--more-->
-
-以下记录Windows7系统下的本地环境搭建过程
 
 ### 第一步 安装ruby ###
 前往[rubyinstaller](http://rubyinstaller.org/downloads/)下载ruby的1.93版本并安装，注意勾选添加到环境变量。
