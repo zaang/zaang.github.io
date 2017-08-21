@@ -1,32 +1,13 @@
-# zaang.github.io
+# Vno - Jekyll
 
-My blog based on Jekyll-Bootstrap.
+[Vno Jekyll](https://github.com/onevcat/vno-jekyll) is a theme for [Jekyll](http://jekyllrb.com). It is a port of my Ghost theme [vno](https://github.com/onevcat/vno), which is originally developed from [Dale Anthony's Uno](https://github.com/daleanthony/uno).
 
-## About Jekyll-Bootstrap
+## Live Demo
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+See [Vno - Jekyll](http://vno.onevcat.com) site and [my blog](http://onevcat.com).
 
-## About theme
+You can also find some instruction as well as other sites using Vno theme in [this page](http://vno.onevcat.com/2016/02/hello-world-vno/).
 
-This theme is the copy of [Simpleyyt](http://simpleyyt.github.io) portal page.
+## Licence
 
-## Usage
-
-You can edit the `_config.yml` file to change the setting of site. If you want to change avatar or favicon, just replace the files in `assets\themes\Snail\img`.
-
-## About excerpt
-
-There are 2 ways of excerpt: "teaser" and "truncate_words" (Configurated in _config.yml).
-
- * "teaser": look for the More tag (<!--more-->) and create a teaser from the content that precedes the More tag.
-You must place "<!--more-->" at paragraph in post. The whole content will be displayed in homepage if no More tag found in post.
-
- * "truncate_words": generate an excerpt automatically by selecting the first 20 words of the post. It doesn't work well in some of no-English post.
-
-## Change Log
-
-
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
+Great thanks to [Dale Anthony](https://github.com/daleanthony) and his [Uno](https://github.com/daleanthony/uno). Vno Jekyll is based on Uno, and contains a lot of modification on page layout, animation, font and some more things I can not remember. Vno Jekyll is followed with Uno and be licensed as [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/). See the link for more information.
