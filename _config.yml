@@ -9,6 +9,8 @@ creator: <a href="http://zaang.github.io">@zaang</a>
 
 permalink: /:year/:month/:title/
 
+excerpt_separator: <!--more-->
+
 # Format
 highlighter: rouge
 
