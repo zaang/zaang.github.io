@@ -14,6 +14,11 @@
             height: 95%;
         }
 
+        body {
+            color: rgb(255,255,255);
+            font-size: 36px;
+        }
+
         #topic-content {
             height: 70%;
             background-color: rgb(155, 186, 31);
@@ -63,19 +68,34 @@
     <div class="container-fluid full-height" ng-controller="gameCtrl as vm">
         <div class="row align-items-center" id="topic-content">
             <div class="col">
-                One of three columns
+                Topic 1
             </div>
         </div>
-        <div class="row align-items-end" id="topic-foot">
+        <div class="row align-items-center" id="topic-foot">
             <div class="col-md-4 full-height" id="topic-timer">
-                One of three columns
+                <div class="row align-items-center full-height">
+                    <div class="col">
+                        Time {{vm.topic.timeLimit}}
+                    </div>
+                </div>
             </div>
             <div class="col-md-8 full-height" id="topic-answer">
-                <div class="row" id="topic-select">
-                    54545
+                <div class="row align-items-center" id="topic-select">
+                    <div class="col">
+                        A. 1
+                    </div>
+                    <div class="col">
+                        B. 2
+                    </div>
+                    <div class="col">
+                        C. 3
+                    </div>
+                    <div class="col">
+                        D. 4
+                    </div>
                 </div>
                 <div class="row" id="topic-history">
-                    45454
+                    <p>History</p>
                 </div>
             </div>
         </div>
@@ -84,19 +104,22 @@
 <script>
     angular.module('myApp', []);
     
-    angular.module('myApp').controller('gameCtrl', ['$timeout', function ($timeout) {
+    angular.module('myApp').controller('gameCtrl', ['$interval', function ($interval) {
         var vm = this;
-        var emptytTpic = {
+        var emptytTopic = {
             loaded: false,
             timeLimit: 10
         };
         var topicList = [];
+        addTopic();
+        vm.topic = topicList[0];
+        Countdown();
 
         ////////////////
 
         function addTopic() {
-            var topic = angular.extend({}, emptytTpic);
-            topicList.addTopic(topic);
+            var topic = angular.extend({}, emptytTopic);
+            topicList.push(topic);
         }
 
         function nextTopic() {
@@ -104,7 +127,13 @@
         }
 
         function Countdown() {
+            $interval(CountdownFN, 1000, vm.topic.timeLimit);
+        }
 
+        function CountdownFN() {
+            if (vm.topic.timeLimit > 0) {
+                vm.topic.timeLimit-=1;
+            }
         }
     }]);
 </script>
