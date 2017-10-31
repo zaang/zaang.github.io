@@ -1,0 +1,115 @@
+app.title = '极坐标系下的堆叠柱状图';
+
+option = {
+    toolbox: {
+    　　show: true,
+    　　feature: {
+    　　　　saveAsImage: {
+        　　　　show:true,
+        　　　　excludeComponents :['toolbox'],
+        　　　　pixelRatio: 2
+    　　　　}
+    　　}
+    },
+    angleAxis: {
+        zlevel: 100
+    },
+    radiusAxis: {
+        type: 'category',
+        data: ['L1', 'L2', 'L3', 'L4', 'L5'],
+        zlevel: 100,
+        z: 100
+    },
+    polar: {
+        zlevel: 100
+    },
+    series: [{
+        type: 'bar',
+        data: [0, 1, 4, 8, 10],
+        coordinateSystem: 'polar',
+        name: '0 Point',
+        stack: 'a',
+        zlevel: 100
+    }, {
+        type: 'bar',
+        data: [10, 15, 14, 12, 10],
+        coordinateSystem: 'polar',
+        name: '1 Point',
+        stack: 'a',
+        zlevel: 100
+    }, {
+        type: 'bar',
+        data: [10, 4, 2, 0, 0],
+        coordinateSystem: 'polar',
+        name: '2 Point',
+        stack: 'a',
+        zlevel: 100
+    },{
+        name:'PERCENTILE',
+        type:'pie',
+        radius: ['0%', '88%'],
+        label: {
+            normal: {
+                formatter: '{a|{a}}{abg|}\n{hr|}\n      {b|高於{b}：}共{c}名同學    ',
+                backgroundColor: 'green',
+                borderColor: '#aaa',
+                color: '#fff',
+                borderWidth: 1,
+                borderRadius: 4,
+                rich: {
+                    a: {
+                        color: '#fff',
+                        lineHeight: 22,
+                        align: 'center'
+                    },
+                    hr: {
+                        borderColor: '#aaa',
+                        width: '100%',
+                        borderWidth: 0.5,
+                        height: 0
+                    },
+                    b: {
+                        lineHeight: 33
+                    },
+                    per: {
+                        color: '#000',
+                        backgroundColor: '#334455',
+                        padding: [2, 4],
+                        borderRadius: 2
+                    }
+                }
+            }
+        },
+        labelLine:{
+            normal:{
+                show: true,
+                lineStyle: {
+                    color: '#999',
+                    width:2
+                }
+            }
+        },
+        itemStyle:{
+            normal:{
+                color: 'rgba(213,245,227,1)',
+                borderColor:'#aaa'
+            }
+        },
+        data:[
+            {value:1, name:'0%'},
+            {value:3, name:'5%'},
+            {value:4, name:'20%'},
+            {value:2, name:'40%'},
+            {value:6, name:'70%'},
+            {value:2, name:'80%'},
+            {value:2, name:'90%'}
+        ]
+    }],
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        show: true,
+        data: ['0 Point', '1 Point', '2 Point']
+    },
+    color: ['#BF360C','#ca8622', '#0D47A1','#2f4554', '#61a0a8', '#d48265', '#91c7ae','#749f83', '#bda29a','#6e7074', '#c4ccd3']
+};

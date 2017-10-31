@@ -1,0 +1,120 @@
+app.title = '极坐标系下的堆叠柱状图';
+
+option = {
+    toolbox: {
+    　　show: true,
+    　　feature: {
+    　　　　saveAsImage: {
+        　　　　show:true,
+        　　　　excludeComponents :['toolbox'],
+        　　　　pixelRatio: 2
+    　　　　}
+    　　}
+    },
+    angleAxis: {
+        zlevel: 100
+    },
+    radiusAxis: {
+        type: 'category',
+        data: ['L1', 'L2', 'L3', 'L4', 'L5', 
+        'L6', 'L7', 'L8','L9','L10'],
+        zlevel: 100,
+        z: 100
+    },
+    polar: {
+        zlevel: 100
+    },
+    series: [{
+        type: 'bar',
+        data: [0, 0, 1, 1, 4, 7, 8, 8, 10, 13],
+        coordinateSystem: 'polar',
+        name: '0 Point',
+        stack: 'a',
+        zlevel: 100
+    }, {
+        type: 'bar',
+        data: [10, 14, 15, 15, 14, 12, 12, 12, 10, 7],
+        coordinateSystem: 'polar',
+        name: '1 Point',
+        stack: 'a',
+        zlevel: 100
+    }, {
+        type: 'bar',
+        data: [10, 6, 4, 4, 2, 1, 0, 0, 0, 0],
+        coordinateSystem: 'polar',
+        name: '2 Point',
+        stack: 'a',
+        zlevel: 100
+    },{
+        name:'PERCENTILE',
+        type:'pie',
+        radius: ['0%', '88%'],
+        label: {
+            normal: {
+                formatter: '{a|{a}}{abg|}\n{hr|}\n      {b|{b}：}{c}    ',
+                backgroundColor: '#424242',
+                borderColor: '#aaa',
+                color: '#fff',
+                borderWidth: 1,
+                borderRadius: 4,
+                rich: {
+                    a: {
+                        color: '#999',
+                        lineHeight: 22,
+                        align: 'center'
+                    },
+                    hr: {
+                        borderColor: '#aaa',
+                        width: '100%',
+                        borderWidth: 0.5,
+                        height: 0
+                    },
+                    b: {
+                        lineHeight: 33
+                    },
+                    per: {
+                        color: '#000',
+                        backgroundColor: '#334455',
+                        padding: [2, 4],
+                        borderRadius: 2
+                    }
+                }
+            }
+        },
+        labelLine:{
+            normal:{
+                show: true,
+                lineStyle: {
+                    color: '#999',
+                    width:2
+                }
+            }
+        },
+        itemStyle:{
+            normal:{
+                color: 'rgba(213,245,227,1)',
+                borderColor:'#aaa'
+            }
+        },
+        data:[
+            {value:1, name:'0%'},
+            {value:3, name:'15%'},
+            {value:3, name:'30%'},
+            {value:1, name:'35%'},
+            {value:2, name:'45%'},
+            {value:3, name:'60%'},
+            {value:1, name:'65%'},
+            {value:2, name:'75%'},
+            {value:2, name:'85%'},
+            {value:1, name:'90%'},
+            {value:1, name:'95%'}
+        ]
+    }],
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        show: true,
+        data: ['0 Point', '1 Point', '2 Point']
+    },
+    color: ['#BF360C','#ca8622', '#0D47A1','#2f4554', '#61a0a8', '#d48265', '#91c7ae','#749f83', '#bda29a','#6e7074', '#c4ccd3']
+};
